@@ -1,0 +1,711 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Measure select' datatype='integer' datatype-customized='true' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='1000'>
+        <calculation class='tableau' formula='1000' />
+        <range granularity='500' max='8000' min='1000' />
+      </column>
+      <column caption='Metric Values' datatype='real' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='1000.'>
+        <calculation class='tableau' formula='1000.' />
+        <range granularity='500.0' max='8000.0' min='1000.0' />
+      </column>
+    </datasource>
+    <datasource caption='Data (Data)' inline='true' name='federated.0l33u7n1n6f13y1aph0bi11al6jf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Data' name='excel-direct.1w083wj0wetg3r189gqlf1neet3b'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/nurda/Downloads/Data.xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[3/2017]' />
+            <value name='[3/2018]' />
+            <value name='[3/2019]' />
+            <value name='[3/2020]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Data].[3/2017]' />
+              <field name='[Data].[3/2018]' />
+              <field name='[Data].[3/2019]' />
+              <field name='[Data].[3/2020]' />
+            </group>
+          </groups>
+          <relation connection='excel-direct.1w083wj0wetg3r189gqlf1neet3b' name='Data' table='[Data$]' type='table'>
+            <columns gridOrigin='A1:F9:no:A1:F9:0' header='yes' outcome='6'>
+              <column datatype='string' name='Nintendo Switch Platform' ordinal='0' />
+              <column datatype='string' name='Metric' ordinal='1' />
+              <column datatype='integer' name='3/2017' ordinal='2' />
+              <column datatype='integer' name='3/2018' ordinal='3' />
+              <column datatype='integer' name='3/2019' ordinal='4' />
+              <column datatype='integer' name='3/2020' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[3/2017]' />
+            <value name='[3/2018]' />
+            <value name='[3/2019]' />
+            <value name='[3/2020]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Data].[3/2017]' />
+              <field name='[Data].[3/2018]' />
+              <field name='[Data].[3/2019]' />
+              <field name='[Data].[3/2020]' />
+            </group>
+          </groups>
+          <relation connection='excel-direct.1w083wj0wetg3r189gqlf1neet3b' name='Data' table='[Data$]' type='table'>
+            <columns gridOrigin='A1:F9:no:A1:F9:0' header='yes' outcome='6'>
+              <column datatype='string' name='Nintendo Switch Platform' ordinal='0' />
+              <column datatype='string' name='Metric' ordinal='1' />
+              <column datatype='integer' name='3/2017' ordinal='2' />
+              <column datatype='integer' name='3/2018' ordinal='3' />
+              <column datatype='integer' name='3/2019' ordinal='4' />
+              <column datatype='integer' name='3/2020' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F9:no:A1:F9:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nintendo Switch Platform</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Nintendo Switch Platform]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Nintendo Switch Platform</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_40DB1A37CA1241E99DC1DFF2E862130F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Metric</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Metric]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Metric</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_40DB1A37CA1241E99DC1DFF2E862130F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_40DB1A37CA1241E99DC1DFF2E862130F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_40DB1A37CA1241E99DC1DFF2E862130F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[3/2017]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[3/2018]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[3/2019]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[3/2020]' role='measure' type='quantitative' />
+      <column caption='Nintendo Switch' datatype='string' name='[Calculation_2116691845806911488]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='SPLIT([Nintendo Switch Platform], &apos;/&apos;, 1)' />
+      </column>
+      <column caption='Region' datatype='string' name='[Calculation_2116691845807181825]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='SPLIT([Nintendo Switch Platform], &apos;/&apos;, 2)' />
+      </column>
+      <column caption='Nintendo Switch - Split 1' datatype='string' name='[Calculation_2116691845811236866]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='//Nintendo Switch - Split 1&#10;TRIM( SPLIT( SPLIT( [Calculation_2116691845806911488], &quot;Nintendo&quot;, 2 ), &quot;Switch&quot;, 2 ) )' />
+      </column>
+      <column caption='Metric selected' datatype='boolean' name='[Calculation_2116691846122295304]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Pivot Field Values] &gt; [Parameters].[Parameter 2]' />
+      </column>
+      <column caption='Calculation1' datatype='real' name='[Calculation_2116691846126096393]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='' />
+      </column>
+      <column datatype='string' name='[Nintendo Switch Platform (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Nintendo Switch Platform]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='true' value='&quot;Nintendo Switch hardware/Europe&quot;'>
+            <value>&quot;Nintendo Switch hardware/Europe&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;Nintendo Switch hardware/Japan&quot;'>
+            <value>&quot;Nintendo Switch hardware/Japan&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;Nintendo Switch hardware/Other&quot;'>
+            <value>&quot;Nintendo Switch hardware/Other&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;Nintendo Switch hardware/The Americas&quot;'>
+            <value>&quot;Nintendo Switch hardware/The Americas&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;Nintendo Switch software/Europe&quot;'>
+            <value>&quot;Nintendo Switch software/Europe&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;Nintendo Switch software/Japan&quot;'>
+            <value>&quot;Nintendo Switch software/Japan&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;Nintendo Switch software/Other&quot;'>
+            <value>&quot;Nintendo Switch software/Other&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Nintendo Switch Platform]' role='dimension' type='nominal' />
+      <column caption='Date' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Values' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Data' datatype='table' name='[__tableau_internal_object_id__].[Data_40DB1A37CA1241E99DC1DFF2E862130F]' role='measure' type='quantitative' />
+      <column-instance column='[Nintendo Switch Platform]' derivation='None' name='[none:Nintendo Switch Platform:nk]' pivot='key' type='nominal' />
+      <column-instance column='[3/2017]' derivation='Sum' name='[sum:3/2017:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[3/2018]' derivation='Sum' name='[sum:3/2018:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[3/2019]' derivation='Sum' name='[sum:3/2019:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[3/2020]' derivation='Sum' name='[sum:3/2020:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Nintendo Switch Platform:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Nintendo Switch hardware/Europe&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Nintendo Switch software/Europe&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Nintendo Switch hardware/The Americas&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Nintendo Switch software/Other&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Nintendo Switch hardware/Other&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Nintendo Switch software/Japan&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Nintendo Switch hardware/Japan&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Nintendo Switch software/The Americas&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Nintendo Switch Platform (group)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Nintendo Switch hardware/Europe&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Nintendo Switch software/Europe&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Nintendo Switch hardware/The Americas&quot;</bucket>
+            </map>
+            <map to='#a2a2a2'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Nintendo Switch software/Other&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Nintendo Switch hardware/Other&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Nintendo Switch software/Japan&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Nintendo Switch hardware/Japan&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0l33u7n1n6f13y1aph0bi11al6jf]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0l33u7n1n6f13y1aph0bi11al6jf].[sum:3/2020:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0l33u7n1n6f13y1aph0bi11al6jf].[sum:3/2019:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0l33u7n1n6f13y1aph0bi11al6jf].[sum:3/2018:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0l33u7n1n6f13y1aph0bi11al6jf].[sum:3/2017:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Metric Values' datatype='real' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='1000.'>
+          <calculation class='tableau' formula='1000.' />
+          <range granularity='500.0' max='8000.0' min='1000.0' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Data' id='Data_40DB1A37CA1241E99DC1DFF2E862130F'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='integer' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[3/2017]' />
+                  <value name='[3/2018]' />
+                  <value name='[3/2019]' />
+                  <value name='[3/2020]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[Data].[3/2017]' />
+                    <field name='[Data].[3/2018]' />
+                    <field name='[Data].[3/2019]' />
+                    <field name='[Data].[3/2020]' />
+                  </group>
+                </groups>
+                <relation connection='excel-direct.1w083wj0wetg3r189gqlf1neet3b' name='Data' table='[Data$]' type='table'>
+                  <columns gridOrigin='A1:F9:no:A1:F9:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Nintendo Switch Platform' ordinal='0' />
+                    <column datatype='string' name='Metric' ordinal='1' />
+                    <column datatype='integer' name='3/2017' ordinal='2' />
+                    <column datatype='integer' name='3/2018' ordinal='3' />
+                    <column datatype='integer' name='3/2019' ordinal='4' />
+                    <column datatype='integer' name='3/2020' ordinal='5' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Data)' name='federated.0l33u7n1n6f13y1aph0bi11al6jf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0l33u7n1n6f13y1aph0bi11al6jf'>
+            <column caption='Region' datatype='string' name='[Calculation_2116691845807181825]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT([Nintendo Switch Platform], &apos;/&apos;, 2)' />
+            </column>
+            <column datatype='string' name='[Nintendo Switch Platform]' role='dimension' type='nominal' />
+            <column caption='Date' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Values' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_2116691845807181825]' derivation='None' name='[none:Calculation_2116691845807181825:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.0l33u7n1n6f13y1aph0bi11al6jf].[sum:Pivot Field Values:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0l33u7n1n6f13y1aph0bi11al6jf].[none:Calculation_2116691845807181825:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0l33u7n1n6f13y1aph0bi11al6jf].[sum:Pivot Field Values:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0l33u7n1n6f13y1aph0bi11al6jf].[none:Calculation_2116691845807181825:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0l33u7n1n6f13y1aph0bi11al6jf].[sum:Pivot Field Values:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0l33u7n1n6f13y1aph0bi11al6jf].[none:Calculation_2116691845807181825:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0l33u7n1n6f13y1aph0bi11al6jf].[sum:Pivot Field Values:qk] + [federated.0l33u7n1n6f13y1aph0bi11al6jf].[sum:Pivot Field Values:qk])</rows>
+        <cols>[federated.0l33u7n1n6f13y1aph0bi11al6jf].[none:Pivot Field Names:nk]</cols>
+      </table>
+      <simple-id uuid='{2D3DA201-E2DE-41D6-94A4-386B9A3E7F0E}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Data)' name='federated.0l33u7n1n6f13y1aph0bi11al6jf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0l33u7n1n6f13y1aph0bi11al6jf'>
+            <column caption='Region' datatype='string' name='[Calculation_2116691845807181825]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT([Nintendo Switch Platform], &apos;/&apos;, 2)' />
+            </column>
+            <column datatype='string' name='[Nintendo Switch Platform]' role='dimension' type='nominal' />
+            <column caption='Date' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Values' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_2116691845807181825]' derivation='None' name='[none:Calculation_2116691845807181825:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Nintendo Switch Platform]' derivation='None' name='[none:Nintendo Switch Platform:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.0l33u7n1n6f13y1aph0bi11al6jf].[sum:Pivot Field Values:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0l33u7n1n6f13y1aph0bi11al6jf].[sum:Pivot Field Values:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0l33u7n1n6f13y1aph0bi11al6jf].[none:Nintendo Switch Platform:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0l33u7n1n6f13y1aph0bi11al6jf].[sum:Pivot Field Values:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0l33u7n1n6f13y1aph0bi11al6jf].[none:Calculation_2116691845807181825:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0l33u7n1n6f13y1aph0bi11al6jf].[sum:Pivot Field Values:qk] + [federated.0l33u7n1n6f13y1aph0bi11al6jf].[sum:Pivot Field Values:qk])</rows>
+        <cols>[federated.0l33u7n1n6f13y1aph0bi11al6jf].[none:Pivot Field Names:nk]</cols>
+      </table>
+      <simple-id uuid='{B2AA6066-7B67-4F97-BFB0-5B9F054B83DF}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0l33u7n1n6f13y1aph0bi11al6jf].[none:Calculation_2116691845807181825:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0l33u7n1n6f13y1aph0bi11al6jf].[none:Calculation_2116691845806911488:nk]</field>
+            <field>[federated.0l33u7n1n6f13y1aph0bi11al6jf].[none:Calculation_2116691845807181825:nk]</field>
+            <field>[federated.0l33u7n1n6f13y1aph0bi11al6jf].[none:Metric:nk]</field>
+            <field>[federated.0l33u7n1n6f13y1aph0bi11al6jf].[none:Nintendo Switch Platform:nk]</field>
+            <field>[federated.0l33u7n1n6f13y1aph0bi11al6jf].[none:Pivot Field Names:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{2FC8244B-FDA3-416D-8F03-844FEB53F358}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0l33u7n1n6f13y1aph0bi11al6jf].[none:Calculation_2116691845807181825:nk]' type='color' />
+            <card pane-specification-id='1' param='[federated.0l33u7n1n6f13y1aph0bi11al6jf].[none:Nintendo Switch Platform:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0l33u7n1n6f13y1aph0bi11al6jf].[none:Calculation_2116691845807181825:nk]</field>
+            <field>[federated.0l33u7n1n6f13y1aph0bi11al6jf].[none:Nintendo Switch Platform:nk]</field>
+            <field>[federated.0l33u7n1n6f13y1aph0bi11al6jf].[none:Pivot Field Names:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{9DB6E62C-9AFE-40D5-9F2F-59EC06AAA6B7}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
